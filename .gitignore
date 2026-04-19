@@ -1,0 +1,84 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# OS cruft
+.DS_Store
+._*
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*~
+
+# Hugo
+portfolio/public/
+portfolio/resources/_gen/
+portfolio/.hugo_build.lock
+
+# Build / local scratch
+.scratch/
+*.log
+build/
+dist/
+
+# Credentials — NEVER commit these
+.env
+*.env
+.env.local
+credentials.json
+secrets.yaml
+secrets.yml
+
+# Large data files — not shipped to GitHub. Download instructions in each project's README.
+# Capstone I — F1 (ergast.com)
+capstones/Capstone_I/data/lap_times.csv
+
+# Capstone II — IMDb bulk dumps
+capstones/Capstone_II/data/title.basics.tsv.gz
+capstones/Capstone_II/data/title.ratings.tsv.gz
+
+# Capstone IV — customer analytics
+capstones/Capstone_IV/data/segmentation/online12M.csv
+
+# Capstone VIII — goodbooks-10k
+capstones/Capstone_VIII/data/book_tags.csv
+capstones/Capstone_VIII/data/ratings.csv
+
+# Intermediate caches that regenerate from raw data
+capstones/Capstone_II/df_movies.feather
+capstones/Capstone_II/data/backup/
+capstones/Capstone_VII/data/ingested.db
+capstones/Capstone_VII/influxdb/
+
+# Model registry / MLflow runs (regenerate per-environment)
+mlruns/
+mlartifacts/
+
+# InfluxDB local state
+*.bolt
+*.sqlite
+
+# Vendored Lambda layer contents (we keep the .zip, not the unpacked tree)
+capstones/Capstone_XI/layer/python/
+
+# Original solved notebooks (preserved locally for audit; not part of portfolio)
+# Uncomment to exclude from the public repo:
+# capstones/*/Capstone*.ipynb
+# !capstones/*/[A-Z]*_*.ipynb

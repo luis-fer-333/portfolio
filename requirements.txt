@@ -1,0 +1,16 @@
+numpy
+pandas
+matplotlib
+seaborn
+scikit-learn
+missingno
+shap
+jupyter
+ipykernel
+
+# Capstone II (Movie DB ETL) — TMDb API + MongoDB + SQLite pipeline
+requests
+certifi
+pymongo
+sqlalchemy
+pyarrow>=17,<19
