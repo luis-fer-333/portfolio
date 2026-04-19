@@ -78,7 +78,5 @@ mlartifacts/
 # Vendored Lambda layer contents (we keep the .zip, not the unpacked tree)
 capstones/Capstone_XI/layer/python/
 
-# Original solved notebooks (preserved locally for audit; not part of portfolio)
-# Uncomment to exclude from the public repo:
-# capstones/*/Capstone*.ipynb
-# !capstones/*/[A-Z]*_*.ipynb
+# Original Spanish-language solved notebooks — preserved locally for audit, not shipped to GitHub
+capstones/*/Capstone*.ipynb
