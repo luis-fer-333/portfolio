@@ -1,75 +1,13 @@
-# Python
-__pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-.venv/
-venv/
-env/
-*.egg-info/
-.installed.cfg
-*.egg
+# Hugo build output
+public/
+resources/_gen/
+.hugo_build.lock
 
-# Jupyter
-.ipynb_checkpoints/
-*.ipynb_checkpoints
-
-# OS cruft
+# Editor / OS
 .DS_Store
-._*
-Thumbs.db
-desktop.ini
-
-# Editor
 .vscode/
 .idea/
-*.swp
-*~
 
-# Hugo
-portfolio/public/
-portfolio/resources/_gen/
-portfolio/.hugo_build.lock
-
-# Build / local scratch
-.scratch/
-*.log
-build/
-dist/
-
-# Credentials — NEVER commit these
-.env
-*.env
-.env.local
-credentials.json
-secrets.yaml
-secrets.yml
-
-# Large data files — not shipped to GitHub. Download instructions in DATA.md.
-capstones/Formula1_Data_Analysis/data/lap_times.csv
-capstones/Movie_Database_ETL_Pipeline/data/title.basics.tsv.gz
-capstones/Movie_Database_ETL_Pipeline/data/title.ratings.tsv.gz
-capstones/Customer_Analytics_Churn_CLV/data/segmentation/online12M.csv
-capstones/Book_Recommender_System/data/book_tags.csv
-capstones/Book_Recommender_System/data/ratings.csv
-
-# Intermediate caches that regenerate from raw data
-capstones/Movie_Database_ETL_Pipeline/df_movies.feather
-capstones/Movie_Database_ETL_Pipeline/data/backup/
-capstones/Electricity_Demand_Forecasting/data/ingested.db
-capstones/Electricity_Demand_Forecasting/influxdb/
-
-# Model registry / MLflow runs (regenerate per-environment)
-mlruns/
-mlartifacts/
-
-# InfluxDB local state
-*.bolt
-*.sqlite
-
-# Vendored Lambda layer contents (we keep the .zip, not the unpacked tree)
-capstones/Cinema_Serverless_AWS/layer/python/
-
-# Original Spanish-language solved notebooks — preserved locally for audit, not shipped to GitHub
-capstones/*/Capstone*.ipynb
+# Node (if we ever add a PostCSS or Tailwind pipeline)
+node_modules/
+package-lock.json
