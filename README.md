@@ -5,10 +5,11 @@ Live site: **[luis-fer-333.github.io](https://luis-fer-333.github.io)**
 
 ## What's here
 
-13 projects spanning the analytics engineering stack. See the [portfolio website](https://luis-fer-333.github.io/projects) for project writeups with architecture diagrams, key decisions, and trade-offs.
+14 projects spanning the analytics engineering stack. See the [portfolio website](https://luis-fer-333.github.io/projects) for project writeups with architecture diagrams, key decisions, and trade-offs.
 
 | Area | Projects |
 |---|---|
+| LLM + Cloud | Medical Appointment Chatbot (WhatsApp + Lambda + LLaMA) |
 | Data lakes & ETL | Nobel Prize Data Lake, Movie Database ETL, Spark Sentiment Pipeline |
 | SQL modeling & BI | Airbnb Valencia BI, Movie Analytics EDA, Formula 1 Data Analysis |
 | Time-series | Electricity Demand + InfluxDB |
@@ -17,9 +18,9 @@ Live site: **[luis-fer-333.github.io](https://luis-fer-333.github.io)**
 | Recommenders | Book Recommender (hybrid) |
 | Cloud architectures | Cinema Serverless AWS |
 
-Each capstone folder contains:
-- A portfolio-ready translated notebook (e.g. `Nobel_Prize_ETL_Datalake.ipynb`)
-- The original solved notebook (preserved for audit)
+Each project folder contains:
+- A portfolio-ready translated notebook (English)
+- The original solved notebook (preserved for audit, gitignored)
 - A `data/` folder with small input files (large files are `.gitignored`, see [DATA.md](./DATA.md))
 - Companion Python scripts, Dockerfiles, or dashboard exports where applicable
 
@@ -34,7 +35,7 @@ jupyter lab
 
 ## Data
 
-Large datasets (IMDb bulk files, Airbnb listings, etc.) aren't committed to this repo. See [DATA.md](./DATA.md) for per-project download instructions.
+Large datasets aren't committed. See [DATA.md](./DATA.md) for per-project download instructions.
 
 ## License
 

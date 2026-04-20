@@ -1,57 +1,57 @@
 # Data Files — Download Instructions
 
-Several projects in this portfolio use data that isn't bundled with the repo because of size or licensing. Each project notebook references its input data under `capstones/<Capstone_X>/data/`. If you want to re-run a notebook end-to-end, download the corresponding dataset into that folder.
+Several projects in this portfolio use data that isn't bundled with the repo because of size or licensing. Each project notebook references its input data under `capstones/<Project_Name>/data/`. If you want to re-run a notebook end-to-end, download the corresponding dataset into that folder.
 
 Small datasets (< 1 MB) are included in the repo directly.
 
 ## Excluded files
 
-### Capstone I — Formula 1
+### Formula 1 Data Analysis
 
-**Missing**: `capstones/Capstone_I/data/lap_times.csv` (~17 MB)
+**Missing**: `capstones/Formula1_Data_Analysis/data/lap_times.csv` (~17 MB)
 
 - Source: [Ergast F1 Database](http://ergast.com/mrd/db/)
 - Download the full zip (`f1db_csv.zip`), extract, and copy `lap_times.csv` into the `data/` folder
 - Other F1 CSVs (`circuits.csv`, `races.csv`, `drivers.csv`, etc.) are included in the repo
 
-### Capstone II — IMDb + TMDb
+### Movie Database ETL Pipeline
 
 **Missing**:
-- `capstones/Capstone_II/data/title.basics.tsv.gz` (~188 MB)
-- `capstones/Capstone_II/data/title.ratings.tsv.gz` (~7 MB)
+- `capstones/Movie_Database_ETL_Pipeline/data/title.basics.tsv.gz` (~188 MB)
+- `capstones/Movie_Database_ETL_Pipeline/data/title.ratings.tsv.gz` (~7 MB)
 
 - Source: [IMDb Datasets](https://datasets.imdbws.com/)
 - Download `title.basics.tsv.gz` and `title.ratings.tsv.gz` directly (no auth required)
 - Place both files under `data/` without decompressing — pandas reads `.tsv.gz` directly
 
-### Capstone IV — Customer Analytics
+### Customer Analytics
 
-**Missing**: `capstones/Capstone_IV/data/segmentation/online12M.csv` (~6 MB)
+**Missing**: `capstones/Customer_Analytics_Churn_CLV/data/segmentation/online12M.csv` (~6 MB)
 
 - Source: [UCI Online Retail](https://archive.ics.uci.edu/ml/datasets/online+retail)
 - Download the Excel file, convert to CSV, and rename as `online12M.csv`
 - The two other datasets (`Telco-Customer-Churn.csv`, `Marketing-Customer-Value-Analysis.csv`) are included in the repo
 
-### Capstone VIII — Book Recommender
+### Book Recommender System
 
 **Missing**:
-- `capstones/Capstone_VIII/data/book_tags.csv` (~16 MB)
-- `capstones/Capstone_VIII/data/ratings.csv` (~14 MB)
+- `capstones/Book_Recommender_System/data/book_tags.csv` (~16 MB)
+- `capstones/Book_Recommender_System/data/ratings.csv` (~14 MB)
 
 - Source: [goodbooks-10k on Kaggle](https://www.kaggle.com/datasets/zygmunt/goodbooks-10k)
 - Download the Kaggle zip, extract, and copy both files into `data/`
 - Other files (`books.csv`, `tags.csv`, `overviews/*.txt`) are included in the repo
 
-### Capstone IX — Airbnb Valencia
+### Airbnb Valencia BI
 
-**Missing**: `capstones/Capstone_IX/data/listings.csv` and `reviews.csv`
+**Missing**: `capstones/Airbnb_Valencia_BI/data/listings.csv` and `reviews.csv`
 
 - Source: [Inside Airbnb — Valencia](https://insideairbnb.com/get-the-data/)
 - Download the `listings.csv.gz` and `reviews.csv.gz` files for Valencia
 - Decompress and place under `data/`
 - License: Inside Airbnb is CC BY 4.0 but redistribution of the raw data is not permitted
 
-### Capstone XII — Amazon Reviews
+### Sentiment Analysis (Spark)
 
 **Missing**: The full `amazon-reviews-pds-parquet` bundle (~10 GB total)
 

@@ -46,26 +46,19 @@ credentials.json
 secrets.yaml
 secrets.yml
 
-# Large data files — not shipped to GitHub. Download instructions in each project's README.
-# Capstone I — F1 (ergast.com)
-capstones/Capstone_I/data/lap_times.csv
-
-# Capstone II — IMDb bulk dumps
-capstones/Capstone_II/data/title.basics.tsv.gz
-capstones/Capstone_II/data/title.ratings.tsv.gz
-
-# Capstone IV — customer analytics
-capstones/Capstone_IV/data/segmentation/online12M.csv
-
-# Capstone VIII — goodbooks-10k
-capstones/Capstone_VIII/data/book_tags.csv
-capstones/Capstone_VIII/data/ratings.csv
+# Large data files — not shipped to GitHub. Download instructions in DATA.md.
+capstones/Formula1_Data_Analysis/data/lap_times.csv
+capstones/Movie_Database_ETL_Pipeline/data/title.basics.tsv.gz
+capstones/Movie_Database_ETL_Pipeline/data/title.ratings.tsv.gz
+capstones/Customer_Analytics_Churn_CLV/data/segmentation/online12M.csv
+capstones/Book_Recommender_System/data/book_tags.csv
+capstones/Book_Recommender_System/data/ratings.csv
 
 # Intermediate caches that regenerate from raw data
-capstones/Capstone_II/df_movies.feather
-capstones/Capstone_II/data/backup/
-capstones/Capstone_VII/data/ingested.db
-capstones/Capstone_VII/influxdb/
+capstones/Movie_Database_ETL_Pipeline/df_movies.feather
+capstones/Movie_Database_ETL_Pipeline/data/backup/
+capstones/Electricity_Demand_Forecasting/data/ingested.db
+capstones/Electricity_Demand_Forecasting/influxdb/
 
 # Model registry / MLflow runs (regenerate per-environment)
 mlruns/
@@ -76,7 +69,7 @@ mlartifacts/
 *.sqlite
 
 # Vendored Lambda layer contents (we keep the .zip, not the unpacked tree)
-capstones/Capstone_XI/layer/python/
+capstones/Cinema_Serverless_AWS/layer/python/
 
 # Original Spanish-language solved notebooks — preserved locally for audit, not shipped to GitHub
 capstones/*/Capstone*.ipynb
